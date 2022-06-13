@@ -1,0 +1,42 @@
+.setting {
+  background-color: $gray--color--bright--5;
+
+  &__heading {
+    border-bottom: 2px solid $gray--color--bright--4;
+    margin-bottom: 32px;
+  }
+
+  &__title {
+    margin: 16px;
+    font-weight: 700;
+    line-height: 143%;
+    color: $gray--color--bright--1;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    @include flex(initial, initial, column);
+    margin: 0 16px;
+    gap: 4px 0px;
+
+    & li {
+      min-width: 205px;
+    }
+  }
+
+  &__link {
+    padding: 10px 35px 10px 16px;
+    width: 100%;
+    font-weight: 400;
+    line-height: 143%;
+    color: $gray--color--dark--3;
+    border-radius: 4px;
+    transition: all 0.1s linear;
+
+    &:hover {
+      background-color: $gray--color--bright--4;
+      color: $primary--color;
+      font-weight: 700;
+    }
+  }
+}

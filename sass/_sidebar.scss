@@ -1,0 +1,42 @@
+.sidebar {
+  &__menu {
+    @include flex(initial, space-between, column);
+    height: 100%;
+    padding: 12px 6px 24px;
+  }
+
+  &__list {
+    @include flex(initial, center, column);
+    text-align: center;
+    gap: 8px 0;
+  }
+
+  &__list li:first-child {
+    text-align: center;
+    margin-bottom: 9px;
+    max-width: 72px;
+  }
+
+  &__link {
+    @include flex(center, center, column);
+    width: 100%;
+    padding: 10px 5px;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 133%;
+    color: #9b9ba8;
+    gap: 10px;
+    transition: all 0.1s linear;
+
+    &:hover {
+      background: #f6f6f8;
+      color: $primary--color;
+      font-weight: 700;
+
+      svg path {
+        fill: currentColor;
+      }
+    }
+  }
+}

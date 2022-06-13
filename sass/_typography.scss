@@ -1,0 +1,14 @@
+body {
+  font-family: $font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  background: $body-bg;
+}
+
+@font-face {
+  font-family: Gibson;
+  src: url(../assets/fonts/Gibson-SemiBold/Gibson-SemiBold.woff) format("woff"),
+    url(../assets/fonts/Gibson-SemiBold/Gibson-SemiBold.woff2) format("woff2"),
+    url(../assets/fonts/Gibson-SemiBold/Gibson-SemiBold.ttf) format("truetype");
+}

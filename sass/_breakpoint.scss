@@ -1,0 +1,6 @@
+@mixin mobile {
+  @media only screen and (max-width: $mobile-width),
+    (min-device-width: $mobile-width) and (max-device-width: $tablet-width) {
+    @content;
+  }
+}
